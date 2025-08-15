@@ -1,21 +1,23 @@
-<!-- {% load static %} -->
 <!DOCTYPE html>
 <html>
     <head>
-        <title>My Homepage</title>
-        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        <title>Restaurant Management - Home</title>
     </head>
-    <body>
-        <header>
-            <h1>
-                Welcome to my Homepage
-            </h1>
+    <body style="font-family : Arial, sans-serif; margin : 0; padding : 0; background-color : #fafafa; text-align: center;">
+
+        <header style="background-color:#ff6f61;color: white; padding: 20px 0;">
+            <h1 style="margin: 0;">Welcome to our Restaurant</h1>
+            <p style="margin: 5px 0">Enjoy the best dining experience</p>
         </header>
-        <main>
-            <p>This is a clean and simple homepage styled with css.</p>
+        <main style="padding: 20px;">
+            <h2 style="color: #333;">Delicious Food, Great Ambience</h2>
+            <p style="max-width: 600px; margin: 10px auto; color: #555; line-height: 1.6;">
+                We Serve freshly prepared dishes made from the finest ingredients. Whether for breakfast, lunch, or dinner.
+            </p>
+            <a href="/menu" style="display: inline-block; padding: 10px 20px; background-color: #ff6f61; color: white; text-decoration: none; border-radius: 5px; margin-top: 10px;">View Menu</a>
         </main>
-        <footer>
-            <p>©️ 2025 My Website</p>
+        <footer style="background-color: #333; color: white; padding: 10px 0;position: fixed; bottom: 0; width: 100%;">
+            <p style="margin: 0;">&copy; 2025 Our Restaurant. All rights reserved.</p>
         </footer>
     </body>
 </html>
