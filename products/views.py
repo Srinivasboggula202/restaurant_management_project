@@ -24,3 +24,13 @@ class ItemView(APIView):
             serializer.save()
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+class MenuItemListView(APIView):
+    def get(self,request):
+        #Hardcoded menu items (later will come from DB)
+        menu_items = [
+            {"id":1, "name": "Panner Butter Masala", "price":180.0,"is_available":True},
+            {"id":2, "name": "Veg Biryani", "price":150.0,"is_available":True},
+            {"id":3, "name": "Chicken Curry", "price" :220.0,"is_available":False},
+        ]
+        return Response(menu_items)
