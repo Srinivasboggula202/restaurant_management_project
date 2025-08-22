@@ -25,6 +25,10 @@ h1{
     color: #333;
 }
 
+h2{
+    color: rgb(211, 56, 56);
+}
+
 p{
     color: #555;
     line-height: 1.6;
