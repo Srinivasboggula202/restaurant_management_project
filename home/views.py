@@ -2,7 +2,7 @@ from django.shortcuts import render
 
 # Create your views here.
 def home(request):
-    """Homepage displaying the restaurant name."""
+    """Homepage displaying the restaurant details."""
     context = {
         "restaurant_name": settings.RESTAURANT_NAME,
         "phone_number": settings.RESTAURANT_PHONE_NUMBER
