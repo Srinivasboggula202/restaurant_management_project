@@ -4,8 +4,8 @@ from django.shortcuts import render
 def home(request):
     """Homepage displaying the restaurant details."""
     context = {
-        "restaurant_name": settings.RESTAURANT_NAME,
-        "phone_number": settings.RESTAURANT_PHONE_NUMBER
+        "restaurant_name": getattr(settings, "RESTAURANT_NAME", "Restaurant"),
+        "phone_number": getattr(settings, "RESTAURANT_PHONE_NUMBER", "Not Available"),
     }
     return render(request,"home.html",context)
 
@@ -14,3 +14,6 @@ def about(request):
 
 def contact_us(request):
     return render(request,"contact_us.html")
+
+if __name__ == "__main__":
+    print("Main file is running - Restaurant Homepage setup ready")
