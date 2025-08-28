@@ -4,7 +4,8 @@ from django.shortcuts import render
 def home(request):
     """Homepage displaying the restaurant name."""
     context = {
-        "restaurant_name": settings.RESTAURANT_NAME
+        "restaurant_name": settings.RESTAURANT_NAME,
+        "phone_number": settings.RESTAURANT_PHONE_NUMBER
     }
     return render(request,"home.html",context)
 
