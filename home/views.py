@@ -15,5 +15,8 @@ def about(request):
 def contact_us(request):
     return render(request,"contact_us.html")
 
+def reservations(request):
+    return render(request, 'reservations.html')
+
 if __name__ == "__main__":
     print("Main file is running - Restaurant Homepage setup ready")
