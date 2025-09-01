@@ -1,25 +1,11 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>{{ restaurant_name }} - Homepage </title>
-        <link rel="stylesheet" href="{% static 'css/style.css' %}">
-    </head>
-    <body>
-
-        <header>
-            <h1 >Welcome to {{ restaurant_name }}</h1>
-            <p >Enjoy the best dining experience</p>
-        </header>
-        <main>
-            <h2>Delicious Food, Great Ambience</h2>
-            <p>
-                We Serve freshly prepared dishes made from the finest ingredients. Whether for breakfast, lunch, or dinner.
-            </p>
-            <p>Call us at: <strong>{{ phone_number }} </strong> </p>
-            <a href="/menu">View Menu</a>
-        </main>
-        <footer>
-            <p>&copy; 2025 Our Restaurant. All rights reserved.</p>
-        </footer>
-    </body>
-</html>
+{% extends 'base.html' %}
+{% block content %}
+    <main>
+        <h2>Delicious Food, Great Ambience</h2>
+        <p>
+            We Serve freshly prepared dishes made from the finest ingredients. Whether for breakfast, lunch, or dinner.
+        </p>
+        <p>Call us at: <strong>{{ phone_number }} </strong> </p>
+        <a href="/menu">View Menu</a>
+    </main>
+{% endblock content %}
