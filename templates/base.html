@@ -3,6 +3,26 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>{{restaurant.name}}</title>
+        <title>{{restaurant_name}}</title>
     </head>
+    <body>
+        <header>
+            <h1>Welcome to {{restaurant_name }}</h1>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">Reservations</a>
+                <a href="#">Signup</a>
+            </nav>
+            <hr>
+        </header>
+        <main>
+            {% block content %}
+            {% endblock content %}
+        </main>
+
+        <footer style="text-align: center; margin-top:20px;">
+            <hr>
+            <p> &copy; {% now "Y" %} Restaurant Management. All rights reserved.</p>
+        </footer>
+    </body>
 </html>
